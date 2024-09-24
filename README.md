@@ -1,6 +1,6 @@
 # 🚀 Repositório de Estudos - Crypto Submersion - 2024/2
 
-Este repositório contém os materiais e resumos dos conteúdos que estudei até agora na trilha de conhecimento: Crypto Submersion - 2024/2. Aqui você vai encontrar resumos sobre: **Scrum**, **Git e GitHub**, **Markdown**, e **Segurança da Informação**.
+Repositório dos materiais e resumos dos conteúdos que estudei até agora na trilha de conhecimento: Crypto Submersion - 2024/2.
 
 ## 📂 Estrutura do Repositório
 
