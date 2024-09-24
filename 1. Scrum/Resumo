@@ -1,0 +1,87 @@
+##1. Identificando Ambientes
+
+🃏 Complexo: Imprevisível (muitas mudanças, métodos empíricos com scrum, kanban e frameworks ágeis)
+
+♟️ Complicado: Conhecível (Planejamento)
+
+🔥 Caótico: Cenário inconcebível (ações emergenciais, domínio de sobrevivência)
+
+➔ Simples: Conhecido (procedimentos padrões, métodos preditivos)
+
+Observação: Ao não seguir o processo correto ou descuidar-se desses processos chaves, pode-se sair de um ambiente simples para um cenário caótico, descontrolado.
+
+
+#FUNDAMENTOS SCRUM:
+Ninguém sabe
+Ngm que conheço fez isso antes
+ - utilizar protótipos, teste, hipóteses..
+Complexo
+Alto risco
+
+Alguém sabe claramente fazer isto
+Alguém já fez, não eu.
+ - especialistas
+Complicado
+Médio risco
+
+Nós claramente sabemos o que tem que fazer
+Já fizemos várias vezes.
+ - analistas
+Simples
+Baixo risco
+
+O planejamento direciona a execução que poderá utilizar os métodos ágeis (SCRUM, XP, CRYSTAL, FDD/DSDM, RUP, ENTRE OUTROS)
+
+##2. Manifesto ágil
+
+Movimento ocorrido em 2001 que ficou conhecido como manifesto ágil, trazendo 4 valores e 12 princípios.
+
+Princípios:
+1. Satisfaça o consumidor;
+2. Aceite bem as mudanças;
+3. Entregas frequentes;
+4. Trabalhe em conjunto;
+5. Confie e apoie;
+6. Conversas face a face;
+7. Softwares funcionando;
+8. Desenvolvimento Sustentáveis;
+9. Atenção contínua;
+10. Mantenha a simplicidade;
+11. Times auto-organizados;
+12. Refletir e ajustar.
+
+Valores:
+1. Indivíduos e interações;
+2. Software em funcionamento;
+3. Colaboração com o cliente;
+4. Responder a mudanças.
+
+##3. Conceitos de agilidade
+1. Modelo preditivo
+Fases:
+Estudos
+    Análise
+        Projeto
+            Codificação
+                Testes
+                    Implantação
+
+2. Modelo ágil
+Cilos e através dos ciclos, as mudanças possam acontecer e vão ser somadas nas sprints (entregas interativas e curtas).
+
+Ágil é um mindset estabelecido por 4 valores, fundamentados por 12 princípios e manifestada através de diversas práticas diferentes
+
+
+Estratégia ❯ Portfólio ❯ Produto ❯ Entrega ❯ Sprint ❯ Diário
+
+<blockquote>
+  <p>Alistar Cockburn</p>
+  <blockquote>
+    <p>"Agilidade é capacidade de mover e mudar de direção, com rapidez e facilidade."</p>
+  </blockquote>
+</blockquote>
+
+**HEART OF AGILE**
+        Colaborar
+Melhorar   ❤️   Entregar
+        Refletir
