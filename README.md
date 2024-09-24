@@ -34,10 +34,10 @@ Sprint_01_pb: 27/09/2024
 │   └── resumo.md
 │
 ├── 2. Git-e-GitHub/
-│   └── comandos-basicos.md
+│   └── resumo.md
 │
 ├── 3. Markdown/
-│   └── sintaxe-markdown.md
+│   └── resumo.md
 │
 └── 4. Seguranca-da-Informacao/
-    └── conceitos.md
+    └── resumo.md
