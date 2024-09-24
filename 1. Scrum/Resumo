@@ -10,8 +10,9 @@
 
 Observação: Ao não seguir o processo correto ou descuidar-se desses processos chaves, pode-se sair de um ambiente simples para um cenário caótico, descontrolado.
 
-
+___
 #FUNDAMENTOS SCRUM:
+
 Ninguém sabe
 Ngm que conheço fez isso antes
  - utilizar protótipos, teste, hipóteses..
@@ -31,6 +32,8 @@ Simples
 Baixo risco
 
 O planejamento direciona a execução que poderá utilizar os métodos ágeis (SCRUM, XP, CRYSTAL, FDD/DSDM, RUP, ENTRE OUTROS)
+
+___
 
 ##2. Manifesto ágil
 
@@ -55,6 +58,7 @@ Valores:
 2. Software em funcionamento;
 3. Colaboração com o cliente;
 4. Responder a mudanças.
+____
 
 ##3. Conceitos de agilidade
 1. Modelo preditivo
@@ -74,12 +78,9 @@ Cilos e através dos ciclos, as mudanças possam acontecer e vão ser somadas na
 
 Estratégia ❯ Portfólio ❯ Produto ❯ Entrega ❯ Sprint ❯ Diário
 
-<blockquote>
-  <p>Alistar Cockburn</p>
-  <blockquote>
-    <p>"Agilidade é capacidade de mover e mudar de direção, com rapidez e facilidade."</p>
-  </blockquote>
-</blockquote>
+> **Alistair Cockburn**
+> 
+>> "Agilidade é a capacidade de mover e mudar de direção com rapidez e facilidade."
 
 **HEART OF AGILE**
         Colaborar
