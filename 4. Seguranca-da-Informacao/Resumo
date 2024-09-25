@@ -1,0 +1,40 @@
+##Módulo 0 - Pilares e as políticas de Segurança da informação
+
+O que é segurança da Informação?
+
+De acordo com o NIST (National Institute of Standards and Technology) a segurança da Informação é a proteção de informações e sistemas de informação contra o acesso, o uso, a divulgação, a interrupção, a modificação ou a destruição não autorizados, a fim de fornecer confidencialidade, integridade e disponibilidade.
+
+
+Pilares da Segurança da informação:
+Confidencialidade: proteção dos dados de acessos n autorizados
+Integridade: manter características originais dos dados
+Disponibilidade: dados estarem disponíveis para o que for necessário e quando precisarmos.
+
+A segurança da informação é reponsabilidade de todos
+
+Política de Segurança da Informação (PSI)
+Boas práticas para proteger as informações, e, tudo que estiver ao contrário deve ser reportado ao time InfoSec.
+
+Orientações do PSI:
+1. Descrever melhores práticas de SI e SC quanto à confidencialidade, integridade e disponibilidade;
+2. Estabelecer diretrizes p/ todos os usuários;
+3. Minimizar riscos de SI.
+
+Política de Classificação da Informação:
+P/ controle adequado é necessário saber o tipo de informação, criticidade e público.
+
+
+##​​​​​​​Módulo 1 - Classificação da Informação
+
+As informações devem ser classificadas para que recebam o nível de proteção adequado a sua sensibilidade, criticidade e valor.
+
+Motivos para classificar:
+- Aplicar devida proteção
+- Reduzir probabilidade de ocorrer incidentes
+
+Níveis de Classificação:
+Confidencial:informações muito sigilosas e que não podem ser divulgadas p/ evitar danos à empresa, terceiros, funcionários e clientes. O seu uso requer medidas de controle e proteção rigorosos contra acessos, cópias, reproduções ou divulgações não autorizadas. Devido a sensibilidade da informação, o destinatário só consegue consultar o documento.
+Restrita: informações exclusivas de alguns profissionais e/ou determinadas áreas, ou seja, nem todos têm acesso a elas, pois os dados são disponibilizados apenas aos destinatários em que foi delegada confiança para tratar do assunto.
+Interna: informações que competem aos profissionais, estagiários e prestadores de serviços da empresa que precisam de cuidados p não divulgação ao público externo.
+Pública: informações que podem ser divulgadas sem restrição para o público em geral.
+
