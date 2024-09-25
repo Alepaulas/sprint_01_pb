@@ -86,3 +86,129 @@ Estratégia ❯ Portfólio ❯ Produto ❯ Entrega ❯ Sprint ❯ Diário
         Colaborar
 Melhorar   ❤️   Entregar
         Refletir
+
+##4. Framework Scrum
+
+Scrum é um Framework que as pessoas podem resolver problemas complexos e adaptáveis enquanto entregam produtos de maneira produtiva e criativa com o maior valor possível
+
+Fundamentos
+- Leve
+- Simples de entender
+- Difícil de aplicar
+
+Valores
+- Coragem
+- Foco 
+- Comprometimento
+- Respeito
+- Abertura
+
+##5. Pilares do Scrum
+
+- Transparência: aspectos do processo que possam afetar os resultados, estejam visíveis
+- Inspeção: processos totalmente inspecionados com uma determinada frequência o suficiente para que as variações possam ser detectadas
+- Adaptação: ao encontrar variação fora dos limites aceitáveis no processo, podendo resultar em um produto com desvios, processo deverá ser ajustado o mais breve possível, p que os desvios futuros sejam minimizados
+
+Eventos formais p os processos de Inspeção e Adaptação:
+Reunião de planejamento da Sprint
+Reunião diária
+Reunião da revisão da Sprint
+Retrospectiva da Sprint
+
+##6. Papéis e Responsabilidades
+
+Scrum Master:
+- Amplo conhecimento do Framework Scrum
+- Responsável por promover e apoiar o Scrum
+- Líder servidor do Time Scrum
+- Auxilia a organização a entender quais suas interações com o Time do Scrum
+
+Para a organização
+- Liderar e apoiar adoção do Scrum
+- Planejar a implementação do Scrum na organização
+- Auxiliar o Time do Scrum e partes interessadas no entendimento do Scrum
+- Ser motivador de mudanças p implementar uma melhor produtividade do Time Scrum
+- Trabalhar com outros Scrum Masters p aumentar a aceitação e efetividade do Scrum
+
+Para Product Owner
+- Garantir q os objetivos sejam compreendidos por todos do Time de Scrum
+- Encontrar técnicas para gerenciamento efetivo do Backlog do Produto
+- Encorajar a necessidade de ter release e produto incremental, claro e conciso 
+- Auxiliar o Product Owner se envolvendo e fazendo as partes interessadas serem mais colaborativos
+- Compreensão sobre planejamento de produtos em Ambientes empíricos
+
+Para o Time de Desenvolvimento
+- Guiar o time para que sejam auto organizados e multifuncionais;
+- Garante que os artefatos do Scrum sejam atualizados;
+- Auxilia o Time de Desenvolvimento a criar produtos de alto valor;
+- Elimina impedimentos para o progresso da construção;
+- Garante um ambiente ideal para o Time de Desenvolvimento;
+- Auxilia o Time de Desenvolvimento no Desenvolvimento do Backlog da Sprint e do Gráfico Burndown da Sprint.
+
+Product Owner
+- Ter ampla visão de negócios;
+- Gerenciar as necessidades e interesses de todas as partes interessadas;
+- Capacidade de interpretação e tradução das necessidades em regras de negócios;
+- Ter habilidade de negociação e didática para explicar as necessidades ao time;
+- Responsável por gerenciar o Product Backlog;
+- Garantir o ROI (Retorno sobre o Investimento);
+- Avaliar a viabilidade e garantir a entrega do produto/serviço;
+- Definir a Visão do Produto;
+- Gerencia a entrada de novos requisitos e priorização;
+- Gerenciar o plano de releases;
+- Definir os critérios de aceitação;
+- Gerenciar o produto de forma a assegurar o valor do trabalho executado pelo Time de Desenvolvimento;
+- Garante o significado de cada um dos itens do backlog;
+- Define as metas das Sprints;
+- Representa o usuário ou cliente;
+- Explicar as User Stories para o Time de Desenvolvimento;
+
+Time de Desenvolvimento
+- Ter Conhecimento do Scrum;
+- Colaboração;
+- Motivado e Proativo;
+- Técnicos;
+- Auto organizados;
+- Independente;
+- Responsável;
+- Orientado por objetivos (Meta da Sprint)
+
+Características:
+Time pequeno p permanecer ágil e grande o suficiente p concluir trabalho da Sprint
+Tamanho ideal: entre 3 a 9 membros
+Somente o Time cria o incremento
+Entendimento claro dos requisitos;
+Estimar os PBI (Product Itens Backlog) aprovadas pelo Product Owner;
+Criar entregáveis de alta qualidade;
+Desenvolver a lista de tarefas baseadas nos PBI (Product Itens Backlog) aprovadas pelo Product Owner;
+Calcular os esforços para as tarefas identificadas.
+Desenvolver o Backlog da Sprint e o gráfico Burndown;
+Identificar oportunidades de melhoria;
+Identificar riscos e implementar ações para mitiga-los;
+Participar do projeto e da Retrospectiva da Sprint.
+
+##7. Sprint, o coração do Scrum
+
+Eventos do Framework scrum
+
+
+Clientes
+    |
+    |                                                            Sprint Retrospective 
+    |                                                                              Daily Scrum
+    ▼
+Product Owner ➜ Product Backlog ➜ Sprint Planning ➜ Sprint Backlog ➜ Time de Dev. ➜ Sprint Review ➜ Incremento do Módulo
+
+**Time-box**
+Tmp máx. pré-definido
+Time-box acaba o Evento
+Pode terminar antes do tmp definido
+Evento **nunca** pode levar mais tempo que o definido
+
+Benefícios:
+- Define limites p auto-organização
+- Disciplina e regularidade
+- Trabalho com Foco (Prioridade e valor)
+
+
+
