@@ -1,28 +1,718 @@
 ##Download e Instalação do Git
+![Linnk para download do Git](https://git-scm.com/downloads) 
+
 ##Configuração do Git
+# Configuração Inicial do Git
+
+A configuração inicial do Git instalado na máquina local requer três informações:
+
+- **User Name** (Nome de usuário)
+- **User Email** (E-mail do usuário)
+- **Default Branch** (Branch padrão)
+    
+    ## Descrição das Informações:
+    
+    - **User Name**: O Git precisa identificar qm fez cada alteração em um arquivo. Exemplo, se houver versões 1.0, 1.1 e 1.2 de um arquivo, é essencial saber quem fez as alterações em cada versão. Por isso, é necessário informar o nome e o e-mail, além da branch em que se vai trabalhar.
+    
+    - **Branch**:  uma parte separada de um projeto. Cada projeto pode ser criado dentro de uma branch. A branch inicial que todos criam se chama **main** (pode ser nomeada de qualquer forma, mas seguindo as boas práticas do Git, utilize "main").
+    
+    ## Iniciando a Configuração
+    
+    1. **Comando de Acesso**: Todos os comandos começam com a palavra `git`. Exemplos de comandos:
+       - `git help` (mostra os comandos disponíveis)
+       - `git clone`, `git init`, `git add`, etc.
+    
+    2. **Limpar a Tela**: Para limpar a tela do terminal, pode-se digitar `clear`.
+    
+    3. **Configurando o User Name**:
+       - Execute: `git config --global user.name "Nome do Usuário"`
+       - Exemplo: `git config --global user.name "Andrey Hakuno"`
+    
+    4. **Configurando o User Email**:
+       - Execute: `git config --global user.email seuemail@exemplo.com`
+       - Exemplo: `git config --global user.email "andre@example.com"`
+    
+    5. **Configurando a Branch Padrão**:
+       - Execute: `git config --global init.defaultBranch main`
+       - Isso define a branch inicial como "main".
+    
 ##Arquivos do Projeto HTML
+## Objetivo
+
+Usar um website em HTML como exemplo para demonstrar a criação de versões e modificações com Git.
+
+## Passos para Criar o Repositório Git
+
+**Download do Website**:
+   - Fazer o download do arquivo compactado do website.
+   - Descompactar o arquivo na máquina.
+
+**Organização dos Arquivos**:
+   - Criar uma pasta chamada **Git** em um local desejado (Downloads, Documentos, etc.).
+   - Mover todos os arquivos descompactados para dentro da pasta **Git**.
+
+   **Verificação dos Arquivos**:
+   - Confirmar que o arquivo é nomeado como `index.html`.
+   - Imagens estão na mesma pasta que o `index.html`.
+
+**Abertura do Website**:
+   - Abrir o arquivo `index.html` com um navegador.
+   - Verificar se o website carrega corretamente.
+
+**Verificação das Imagens**:
+   - Se as imagens não carregarem, verifique os caminhos no código.
+   - Teste alterações no código e atualize a página para observar as mudanças.
+
 ##Inicializando seu primeiro repositório
+**Navegar até o Diretório**:
+   - Usar `cd <caminho_do_diretório>` no terminal.
+
+**Inicializar o Repositório**:
+   - Executar `git init` p criar o subdiretório oculto `.git`.
+
+**Verificar o Status**:
+   - Usar `git status` para ver que vc está na branch `main` e listar arquivos n rastreados.
+
 ##Realizando o Tracking dos arquivos
+**Verificação do Diretório**:
+    - Git deve estar instalado e que o diretório está correto.
+ 
+ **Status Inicial**:
+    - Os arquivos estão no estado **untracked** (n rastreados). Isso significa que o Git n está criando snapshots (cópias) das alterações.
+ 
+**Adicionar Arquivos**:
+    - `git add <arquivo>` para adicionar um arquivo individual, por exemplo, `git add index.html`.
+    - `git status` para verificar o novo estado do arquivo, que agora estará **staged** (pronto para commit).
+ 
+ **Adicionar Todos os Arquivos**:
+    - Para adicionar todos os arquivos de uma vez, use `git add .` ou `git add --all`.
+ 
+ **Verificação do Status**:
+    - Após adicionar, execute `git status` novamente para confirmar que todos os arquivos estão **staged** e prontos para o commit.
+ 
+ **Próximos Passos**:
+    - Na próxima aula, será abordado como ignorar arquivos que n devem ser rastreados pelo Git.
+
 ##Realizando o primeiro Commit
+## Conceito de Commit
+
+- O commit cria um **snapshot** (cópia) dos arquivos que estão no estado **staged**, permitindo que você registre uma versão final do projeto.
+    - Se precisar fazer alterações posteriormente, você poderá reverter para a versão anterior.
+    
+## Passos para o Primeiro Commit
+    
+**Verificação do Status**:
+    - Execute `git status` para confirmar que os arquivos estão prontos para o commit.
+    
+**Criar o Commit**:
+    - Digite o comando `git commit -m "Primeiro commit: todos os arquivos inclusos"`.
+    - A mensagem deve descrever as mudanças feitas para manter um histórico.
+    
+**Resultado**:
+    - O commit foi realizado, registrando todos os arquivos, e você verá um resumo indicando o número de inserções e mudanças.
+    
+**Verificação Após o Commit**:
+    - Execute `git status` novamente para confirmar que n há mais alterações pendentes.
+
 ##Modificando um arquivo
+**Alterar o Arquivo**:
+   - Edite `index.html`, alterando a data de "1889" para "1885", e salve o arquivo.
+
+**Verificar Status**:
+   - Execute o comando:
+     ```bash
+     git status
+     ```
+     - Isso mostrará que o arquivo foi modificado.
+
+**Verificar Diferenças**:
+   - Use o comando:
+     ```bash
+     git diff
+     ```
+     - Isso mostrará as mudanças feitas, com a versão antiga em vermelho e a nova em verde.
+
+**Adicionar ao Staging**:
+   - Prepare o arquivo para o commit com:
+     ```bash
+     git add index.html
+     ```
+
+**Fazer o Commit**:
+   - Finalize a alteração com o comando:
+     ```bash
+     git commit -m "Alterei a data de fundação"
+     ```
+
+**Ver Histórico de Commits**:
+   - Ver o log completo:
+     ```bash
+     git log
+     ```
+   - Ver um log mais compacto (apenas uma linha por commit):
+     ```bash
+     git log --oneline
+     ```
+
 ##Pulando o Staging
+**Alteração no Arquivo**:
+   - Editar `index.html`, alterando a data de "1885" p "1880", e salve o arquivo.
+
+**Verificar Status**:
+   - Executar o comando:
+     ```bash
+     git status
+     ```
+     - Isso mostrará que o arquivo foi modificado.
+
+**Fzr o Commit Direto (Sem Staging)**:
+   - Para pular o processo de adicionar ao staging e ir direto para o commit, execute:
+     ```bash
+     git commit -a -m "Alterei a data para 1880"
+     ```
+   - A opção `-a` adiciona automaticamente todos os arquivos modificados ao commit, sem passar pelo estágio de staging.
+
+**Verificar a Alteração**:
+   - Após o commit, a alteração já estará aplicada. Atualizar a página p ver a nova data "1880".
+
 ##Removendo e restaurando arquivos
+**Remover Arquivo Usando `git rm`**:
+   - Execute o comando:
+     ```bash
+     git rm TheRanBurger.jpg
+     ```
+
+**Verificar Status**:
+   - Após a remoção, verifique o status:
+     ```bash
+     git status
+     ```
+   - O arquivo aparecerá como "deleted".
+
+**Deletando Arquivo Manualmente**:
+   - Caso um arquivo como `TableSetting.jpg` seja removido manualmente, use:
+     ```bash
+     git status
+     ```
+   - O Git indicará que o arquivo foi deletado, mas não está em staged.
+
+**Restaurar Arquivo Usando `git restore`**:
+   - Para restaurar um arquivo removido via `git rm`:
+     ```bash
+     git restore --staged TheRanBurger.jpg
+     ```
+   - Para restaurar ao diretório de trabalho:
+     ```bash
+     git restore TheRanBurger.jpg
+     ```
+
+**Restaurar Arquivo Deletado Manualmente**:
+   - Para restaurar um arquivo deletado manualmente:
+     ```bash
+     git restore TableSetting.jpg
+     ```
+
+**Verificar a Restauração**:
+   - Após restaurar, verifique o status novamente:
+     ```bash
+     git status
+     ```
 ##Renomeando arquivos
+**Importância do Rename**:
+    - Renomear arquivos é uma ação frequente no trabalho com Git.
+ 
+**Escolha do Arquivo**:
+    - Certifique-se de escolher um arquivo que esteja sob controle do Git, como `hamburger.jpg`.
+ 
+**Evitar Mudanças Manuais**:
+    - Renomear manualmente fará com que o Git reconheça a mudança como exclusão de um arquivo e adição de outro.
+ 
+**Usar o Comando `git mv`**:
+    - Para renomear, utilize o comando:
+      ```bash
+      git mv hamburger.jpg hamburger2.jpg
+      ```
+ 
+**Verificar o Status**:
+    - Após o rename, verifique o status:
+      ```bash
+      git status
+      ```
+    - O Git indicará que houve um rename de `hamburger.jpg` para `hamburger2.jpg`.
+ 
+**Reverter o Rename (se necessário)**:
+    - Para desfazer a mudança, use:
+      ```bash
+      git mv hamburger2.jpg hamburger.jpg
+      ```
+ 
+**Confirmar as Alterações**:
+    - Verifique novamente o status para assegurar que tudo voltou ao normal:
+      ```bash
+      git status
+      ```
+ 
+Usar `git mv` sempre que precisar renomear arquivos, garantindo que o Git reconheça corretamente a alteração.
+
 ##Realizando um Amend na mensagem
+**Objetivo do Amend**:
+    - O comando `amend` permite alterar a mensagem do último commit sem criar um novo commit.
+**Verificar o Log de Commits**:
+    - Para visualizar os commits anteriores, use:
+      ```bash
+      git log
+      ```
+    - Identifique o commit que deseja alterar.
+ 
+**Comando para Alterar a Mensagem**:
+    - Utilize o seguinte comando para modificar a mensagem do último commit:
+      ```bash
+      git commit --amend -m "Alterei a data de fundação da empresa para 1880"
+      ```
+    - Isso substituirá a mensagem do último commit pela nova.
+ 
+**Confirmar a Alteração**:
+    - Após executar o comando, você verá uma mensagem de sucesso. Para verificar se a alteração foi aplicada, execute:
+      ```bash
+      git log --oneline
+      ```
+    - A nova mensagem aparecerá no log.
+ 
 ##Log detalhado
+**Verificar o Status e o Log**:
+   - Para saber o que está pendente para commit, use:
+     ```bash
+     git status
+     ```
+   - Para ver um resumo dos commits, use:
+     ```bash
+     git log
+     ```
+
+**Comando para Visualizar Mudanças**:
+   - Execute o seguinte comando para ver as alterações detalhadas:
+     ```bash
+     git log -p
+     ```
+   - Isso exibirá o histórico de commits com as diferenças de cada alteração.
+
+**Navegando pelo Histórico**:
+   - Utilize a barra de espaço para rolar para baixo e visualizar os commits anteriores.
+   - Para sair do visualizador, pressione `q`.
+
 ##Git Reset
+- Para visualizar todas as mudanças em detalhes de todos os commits, sempre utilize:
+     ```bash
+     git log -p
+     ```
+
 ##Realizando o Reset Hard
+O comando `git reset` no Git permite retornar a um ponto anterior no histórico de commits, sendo útil em várias situações. Existem três modos principais:
+
+**Soft**: 
+   - Retorna ao commit anterior e mantém as alterações no estado "staged", pronto para um novo commit.
+   - **Comando**: `git reset --soft <commit>`
+
+**Mixed**: 
+   - Retorna ao commit anterior e mantém as alterações no estado "unstaged", exigindo que você adicione as mudanças novamente.
+   - **Comando**: `git reset --mixed <commit>`
+
+**Hard**: 
+   - Retorna ao commit anterior e descarta todas as alterações feitas após esse ponto, sem possibilidade de recuperação.
+   - **Comando**: `git reset --hard <commit>`
+
+### Exemplo
+Para voltar ao commit com o hash `038`, usar:
+- **Soft**: `git reset --soft 038`
+- **Mixed**: `git reset --mixed 038`
+- **Hard**: `git reset --hard 038`
 ##Git alias
+O `Git Alias` é uma maneira de criar atalhos para comandos longos no Git, facilitando e acelerando o uso de comandos frequentemente utilizados.
+
+### Criando um Alias
+
+Para criar um alias, você deve modificar o arquivo de configuração do Git. Por exemplo, para criar um atalho que substitui `git log --oneline` por `git log1`, siga os passos abaixo:
+
+**Criar o Alias**:
+   - Use o comando:
+     ```bash
+     git config --global alias.log1 "log --oneline"
+     ```
+
+**Utilizar o Alias**:
+   - Após criar o alias, você pode usar `git log1` em vez de `git log --oneline`.
+
+### Localização do Arquivo de Configuração
+
+- O arquivo de configuração do Git (`git config`) pode ser encontrado no diretório raiz onde o Git está instalado. Você pode abrir esse arquivo com um editor de texto para visualizar ou editar os aliases criados.
+
+### Armazenamento e Portabilidade
+
+- Os aliases são armazenados no arquivo de configuração do Git, que pode ser facilmente transferido entre máquinas. Assim, se você mudar de computador, pode copiar os aliases do arquivo de configuração da máquina antiga para a nova.
+
+
 ##O que são Branch
+
+As **branches** no Git funcionam como filiais de um projeto, permitindo que você trabalhe em diferentes versões de um código simultaneamente sem afetar a branch principal (geralmente chamada de `main`).
+
+### Estrutura da Branch
+
+- A branch principal (`main`) contém todos os arquivos e commits do projeto.
+- Para verificar as branches disponíveis, use o comando:
+  ```bash
+  git branch
+
 ##Criando a Branch AddMenu
+Vamos criar uma nova branch chamada `addMenu`, que refletirá a função da branch. Isso facilita a identificação do que você está trabalhando no projeto.
+
+**Verificar as Branches**:
+   - Use o comando:
+     ```bash
+     git branch
+     ```
+   - No início, você verá apenas a branch `main`.
+
+**Criar a Nova Branch**:
+   - Para criar a branch, execute:
+     ```bash
+     git branch addMenu
+     ```
+   - Verifique se a nova branch foi criada.
+
+### Passo 2: Mudar para a Nova Branch
+
+Agora, você precisa mudar para a nova branch para fazer suas alterações.
+
+**Trocar para a `addMenu`**:
+   - Utilize o comando:
+     ```bash
+     git switch addMenu
+     ```
+   - Confirme a troca verificando que o nome da branch atual está agora `addMenu`.
+
+### Passo 3: Fazer as Alterações
+
+Exemplo, você irá adicionar um novo item ao menu no seu arquivo HTML.
+
+**Editar o Arquivo**:
+   - Localize o arquivo `index.html` e adicione um novo menu chamado "Cells" entre os menus existentes "About" e "Menu".
+   - Salve suas alterações.
+
+### Passo 4: Adicionar e Comitar as Alterações
+
+Após fazer as alterações, adicione e faça o commit.
+
+**Adicionar as Alterações**:
+   ```bash
+   git add .
+
 ##Removendo a Branch AddMenu
+epois de criar uma branch e utilizá-la para implementar uma funcionalidade, como adicionar um novo menu, é importante manter seu repositório organizado. Portanto, se você não precisa mais da branch, é bom removê-la para evitar confusão futura.
+
+### Passo 1: Verificar as Branches
+
+Antes de remover uma branch, você pode verificar quais branches estão disponíveis no seu repositório.
+
+**Listar as Branches**:
+   - Use o comando:
+     ```bash
+     git branch
+     ```
+   - Você verá uma lista das branches, incluindo a `main` e a `addMenu`.
+
+### Passo 2: Remover a Branch
+
+Para remover a branch que não é mais necessária, você utilizará o comando `git branch -d`.
+
+**Remover a Branch `addMenu`**:
+   - Execute o seguinte comando:
+     ```bash
+     git branch -d addMenu
+     ```
+   - Após pressionar Enter, você verá a mensagem confirmando que a branch foi deletada:
+     ```
+     Deleted branch addMenu.
+     ```
+
+### Passo 3: Confirmar a Remoção
+
+Após remover a branch, é bom confirmar se a operação foi bem-sucedida.
+
+**Verificar as Branches Novamente**:
+   - Execute novamente:
+     ```bash
+     git branch
+     ```
+   - Agora você deve ver apenas a branch `main` listada.
+
+### Passo 4: Verificar o Log de Commits
+
+Para garantir que suas alterações foram mantidas e a branch foi removida corretamente, você pode verificar o log de commits.
+
+**Verificar o Log**:
+   - Use o comando:
+     ```bash
+     git log --oneline
+     ```
+   - Você verá os commits relacionados à branch `addMenu` no histórico, já que as alterações foram mescladas na branch `main`.
+
 ##Criando sua conta no GitHub
+### GitHub vs GitLab
+
+- **GitHub**: Oferece planos gratuitos e pagos, com recursos para projetos individuais e equipes.
+- **GitLab**: Também possui um plano gratuito e opções premium para grupos de programadores e organizações.
+
+Ambas as plataformas têm planos que atendem perfeitamente ao que precisamos para este curso. Você pode escolher qualquer uma delas sem problemas.
+
+### Passo 1: Acessar o GitHub
+
+1. **Visite o GitHub**: Vá para [github.com](https://github.com).
+2. **Criar uma Conta**:
+   - Se você já possui uma conta, clique em **Sign In**.
+   - Caso contrário, clique em **Sign Up** para criar uma nova conta.
+
+### Passo 2: Preencher o Formulário de Inscrição
+
+1. **Informações Necessárias**:
+   - **Nome de Usuário**: Escolha um nome de usuário exclusivo.
+   - **E-mail**: Insira seu endereço de e-mail.
+   - **Senha**: Crie uma senha segura.
+
+2. **Verificação**: Complete as verificações solicitadas, como CAPTCHA, para garantir que você não é um robô.
+
+3. **Finalizar Inscrição**: Após preencher os dados, clique em **Create Account** ou similar para concluir a criação da sua conta.
+
+### Passo 3: Acessar a Interface do GitHub
+
+1. **Login**: Após criar sua conta, faça login com suas credenciais.
+2. **Interface do GitHub**: Você verá a tela inicial com várias opções, como:
+   - Criar repositórios
+   - Verificar seus projetos
+   - Acesso ao seu perfil
+
+### Passo 4: Configurações do Perfil
+
+- **Perfil**: Na parte superior direita, você pode acessar informações sobre seu perfil, repositórios e projetos.
+- **Configurações**: Para fazer alterações em suas configurações, clique em **Settings**.
+- **Sair**: O botão de **Sign Out** está também disponível nessa área.
+
 ##Criando o seu primeiro Repository
+### Passo 1: Acessar o GitHub
+
+Agora vamos criar nosso primeiro repositório no GitHub. Primeiro, acesse o GitHub em [github.com](https://github.com).
+
+### Passo 2: Criar um Novo Repositório
+
+1. **Clique em "Create Repository"**:
+   - Você verá uma opção para criar um novo repositório.
+
+2. **Nome do Repositório**:
+   - Dê um nome ao seu repositório, por exemplo, **my-website**.
+
+3. **Descrição**:
+   - Adicione uma breve descrição, como: "Este repositório contém meu website de catering".
+
+4. **Visibilidade**:
+   - Escolha entre público ou privado:
+     - **Público**: Qualquer pessoa pode visualizar o repositório, mas apenas você pode fazer alterações.
+     - **Privado**: O repositório fica oculto da internet.
+
+5. **Adicionar um README**:
+   - Você pode optar por adicionar um arquivo README, mas neste caso, deixe desmarcado.
+
+6. **Adicionar um `.gitignore`**:
+   - Caso já tenha feito isso anteriormente, não precisa adicionar novamente.
+
+7. **Licença**:
+   - Para este repositório, você pode deixar essa opção em branco.
+
+8. **Criar Repositório**:
+   - Clique em **Create repository**.
+
+### Passo 3: Configurar o Repositório Local
+
+Agora que seu repositório foi criado, você verá um guia rápido sobre como conectar seu repositório local ao GitHub.
+
+1. **Copiar os Comandos**:
+   - Copie o comando para anexar seu repositório existente à linha de comando.
+
+2. **Abrir o Terminal**:
+   - Cole o comando no terminal e pressione **Enter**.
+
+3. **Configurar a Branch**:
+   - Mantenha a branch **main** ou altere conforme necessário.
+   - Utilize o comando `git push -u origin main` para enviar seus arquivos.
+
+### Passo 4: Autenticação
+
+Ao tentar enviar (push) para o GitHub, você pode ser solicitado a autenticar.
+
+1. **Nome de Usuário e Senha**:
+   - Digite seu nome de usuário e a senha.
+
+2. **Token de Acesso Pessoal**:
+   - Desde 3 de agosto de 2021, o GitHub não permite autenticação apenas com usuário e senha. Você precisará criar um token de acesso pessoal:
+     - Vá para **Settings** > **Developer Settings** > **Personal Access Tokens**.
+     - Clique em **Generate New Token** e configure o nome, expiração e permissões necessárias.
+     - Copie o token gerado e guarde-o em um lugar seguro, pois você não poderá vê-lo novamente.
+
+### Passo 5: Enviar Arquivos para o GitHub
+
+1. **Retorne ao Terminal**:
+   - Cole seu nome de usuário e, no lugar da senha, cole o token que você criou.
+
+2. **Verificar o Repositório**:
+   - Após o push, verifique se seus arquivos foram enviados com sucesso ao repositório no GitHub.
+
 ##Push de outras Branches
+1. **Verificação de Branches**: Use o comando `git branch` no terminal para visualizar as branches existentes. Neste exemplo, só existe a branch `main`.
+
+2. **Push de Branches**: O comando `git push origin main` apenas envia a branch `main`. Para enviar outras branches, é necessário criar uma nova branch.
+
+3. **Criação de uma Nova Branch**: Utilize o comando `git switch -c add-item` para criar e mudar para a branch `add-item`.
+
+4. **Edição de Arquivo**: Abra o arquivo `index.html` e adicione um novo item ao menu. Após salvar as alterações, execute:
+   ```bash
+   git add .
+   git commit -m "Adicionado o item frittata ao menu"
+
 ##Navegando pelo GitHub
+1. **Merge de Branches**:
+   - Realize o merge da branch `add-item` para `main` com:
+     ```bash
+     git merge -m "Merge da branch add-item para main"
+     ```
+
+2. **Commit e Push**:
+   - Adicione as alterações e faça o commit:
+     ```bash
+     git add .
+     git commit -m "Novo item adicionado ao menu"
+     ```
+   - Execute o push:
+     ```bash
+     git push
+     ```
+
+3. **Interface do GitHub**:
+   - Explore sua conta e repositórios.
+   - Utilize menus para gerenciamento e configurações.
+   - Visualize e manipule arquivos diretamente.
+
 ##Criando um Issue
+1. **Identificação do Problema**:
+   - Um desenvolvedor notou um erro no preço de um item no site e precisa criar um *issue* para reportar.
+
+2. **Criando um Issue**:
+   - Acesse o repositório, vá em *Issues* e clique em *New Issue*.
+   - Título: "Valor errado na página index".
+   - Comentário: "O valor da frittata está errado e deve ser atualizado para R$ 11,50".
+   - Atribua a responsabilidade a si mesmo e adicione labels se necessário.
+   - Clique em *Submit Issue*.
+
+3. **Discussão do Issue**:
+   - O desenvolvedor pode comentar sobre o issue para discutir a correção, podendo concordar ou discordar.
+
+4. **Fazendo a Correção**:
+   - Acesse o arquivo `index` e edite diretamente no GitHub.
+   - Altere o valor da frittata para R$ 11,50.
+   - Faça um *commit* das mudanças, preferindo criar uma nova branch chamada `FixPrice`.
+   - Proponha a mudança com um *Pull Request*.
+
+5. **Pull Request**:
+   - O Pull Request é para atualizar a página com a nova informação.
+   - Comente sobre a atualização no Pull Request e clique em *Create Pull Request*.
+
+6. **Finalizando o Merge**:
+   - Realize o *merge* do Pull Request para integrar as mudanças à branch principal.
+   - O issue é automaticamente fechado ao completar o merge.
+   - Opção de deletar a branch utilizada para manter o repositório limpo.
+
+7. **Colaboração no GitHub**:
+   - A criação de issues e pull requests facilita a comunicação e a colaboração entre desenvolvedores, mostrando o poder do GitHub.
+
 ##Criando um Release
+1. **O que são Releases?**:
+   - Releases são versões oficiais de um software, como quando você baixa um programa que mostra sua versão (ex: 2.3.1, 2.3.7).
+
+2. **Criando um Release**:
+   - Para lançar uma versão, acesse a seção *Releases* do repositório.
+   - Clique em *Create a new Release*.
+
+3. **Definindo a Tag**:
+   - Crie uma nova tag para o release, por exemplo, `1.0.0`.
+
+4. **Título do Release**:
+   - Defina o título, como "Website is ready".
+   - Adicione uma descrição: "Website is ready to use".
+
+5. **Publicando o Release**:
+   - Você pode publicar o release ou salvá-lo como rascunho.
+   - Após publicar, os usuários podem baixar o código-fonte em formatos como ZIP ou TAR.GZ.
+
+6. **Futuras Atualizações**:
+   - Após implementar alterações significativas (como adicionar novos itens ou consertar bugs), um novo release pode ser criado com uma nova tag (ex: `1.0.1`).
+   - O histórico dos releases permite acompanhar a evolução do projeto.
+
+7. **Visibilidade dos Releases**:
+   - Os releases ficam registrados no repositório, oferecendo um histórico completo do desenvolvimento do projeto.
+
 ##Realizando o Pull das alterações
+1. **Inverso do Push**:
+   - O que foi feito até agora: alterações feitas localmente e enviadas para o GitHub com o comando *push*.
+   - O que será feito agora: atualizar o repositório local com as alterações do GitHub usando o *pull*.
+
+2. **Verificando Valores**:
+   - Antes de fazer o *pull*, é verificado que o valor local está como `10,50`, enquanto no GitHub está como `11,50`.
+   - O objetivo é garantir que ambos os valores sejam iguais.
+
+3. **Executando o Pull**:
+   - O comando para atualizar o repositório local é simples: `git pull`.
+   - Após a execução, o repositório local é atualizado para refletir as mudanças do GitHub.
+
+4. **Resultado**:
+   - Após o *pull*, ambos os valores agora estão como `11,50`.
+   - Com isso, as versões do repositório local e do GitHub estão sincronizadas.
+
+5. **Uso Frequente**:
+   - Os comandos *push* e *pull* serão utilizados frequentemente durante o trabalho com Git.
+
 ##Download e Instalação do VSCode
-Criando o diretório e inicializando
+
+![Link para Download do VSCode](https://code.visualstudio.com/download)
+
+##Criando o diretório e inicializando
+1. **Introdução**:
+   - O objetivo é sincronizar o viés cloud com o repositório Git.
+   - Um novo repositório será criado para isso.
+
+2. **Verificação do Git**:
+   - Antes de tudo, é necessário verificar se o Git está habilitado na máquina.
+   - Acessar as configurações e procurar por "git enabled".
+   - Certificar-se de que a opção está marcada.
+
+3. **Criando um Novo Diretório**:
+   - Um diretório de trabalho é criado no viés cloud, não utilizando o projeto anterior.
+   - A pasta será chamada `Git vs Cloud`.
+   - A pasta é criada e aberta no VSCode.
+
+4. **Criando um Arquivo HTML**:
+   - Um arquivo chamado `index.html` é criado.
+   - Usar o recurso de autocompletar do VSCode para gerar um documento HTML básico.
+   - O título da página é alterado para "My App Website" e um texto simples é adicionado.
+
+5. **Verificando o Funcionamento**:
+   - O arquivo `index.html` é aberto no navegador para verificar se está funcionando corretamente.
+
+6. **Inicializando o Repositório Git**:
+   - No VSCode, o ícone de controle de versão é selecionado e o repositório é inicializado com o botão "Initialize Repository".
+   - Se o Git não estiver instalado, será solicitado o download.
+   - Após a inicialização, o arquivo `index.html` é marcado com um "U" indicando que não está sendo rastreado pelo Git.
+
 VSCode para o GitHub
+ - Abrir o github no VSCode
+ - Criar pasta
+ - Criar o arquivo
+ - Realizar o Commit e Push no VSCode p que o repositorio do Github apareça o novo repositorio/pasta
+
+![Meu certificado](https://udemy-certificate.s3.amazonaws.com/image/UC-e1b6a6d1-15bc-429a-9f51-773290898876.jpg)
