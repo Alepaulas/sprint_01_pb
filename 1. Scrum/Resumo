@@ -210,5 +210,238 @@ Benefícios:
 - Disciplina e regularidade
 - Trabalho com Foco (Prioridade e valor)
 
+SPRINT
+
+* É um coração do Scrum;
+* Realização dos trabalhos em iterações ou ciclos de até 4 semanas;
+* Duração de 1 a 4 semanas;
+* O trabalho completado a cada Sprint deve criar algo de valor tangível para o cliente;
+* Sprints são planejadas em TIMEBOX, sempre possuindo uma data de inicio e fixadas, e geralmente devem possuir a mesma duração;
+* Uma Sprint consiste de Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective;
+* Durante a execução da Sprint não devem ser feitas quaisquer alterações que afetem a meta da Sprint.
+
+Planejamento > Sprint 1 > Revisão da Sprint > Restrospectiva da Sprint
+                   | 
+           reuniões diárias (daily)  
+
+Planejamento da Sprint (Sprint Planning)
+* Onde toda iteração é planejada;
+* Um evento time-boxed, geralmente de 8 horas para uma sprint de um mês de duração;
+* Definir "o que será feito" e "como";
+* O Product Owner apresenta os itens selecionados para a sprint;
+* Definir a meta da sprint;
+* Realiza a decomposição os itens em unidades de dias ou menos;
+* Criação do Sprint Backlog;
+
+##8. Reunião Diária (Daily Scrum)
+Reunião Diária(Daily Scrum)
+* Momento onde o Time de Desenvolvimento se encontra diariamente;
+* Reunião de no máximo 15 minutos;
+* Ocorre sempre no mesmo local e no mesmo horário;
+* Tem como objetivo que cada membro do time explique de forma breve:
+1. O que realizou desde a última reunião diária?;
+1. O que ira realizar até a próxima reunião diária?;
+
+III. Quais obstáculos ou impedimentos estão em seu caminho?
+* A reunião pode ser considerada um ato de passagem de status;
+* Caso haja algum impedimento, o Time de Desenvolvimento se auto-organiza para resolver;
+* Caso o Time de Desenvolvimento não consiga recolver algo estes san renassados ao Scrum Master p resolver.
+
+Revisão da Sprint
+- Momento de apresentação da Sprint
+- Seu objetivo é a revisão do Product Owner, ou do cliente, em todos os itens concluídos pelo Time;
+- Evento time-boxed de quatro horas
+- Neste evento será possível avaliar o que foi considerado pronto em relação ao que deveria ser entregue
+
+##9. Artefatos do Scrum
+
+Backlog do Produto
+Backlog da versão de entrega
+Backlog da Sprint
+Quadro de tarefas (taskboard)
+Burndown Charts
+
+Backlog do produto
+- Lista ordenada criada pelo Time Scrum, onde somente o Product Owner pode inserir, remover ou reordenar os itens
+- Formato mais utilizado p os itens é o de User Stories (estórias de usuário)
+- Em geral os itens de maior importância são os itens que se têm maior conhecimento e tem maior detalhamento
+- Pode conter itens funcionais, não funcionais, melhorias, correções...
+
+Backlog da Sprint
+* Conjunto de itens selecionados para serem implementados durante a Sprint mais o plano necessário para transformá-los em um Incremento:
+* Ao final da Sprint Planning um novo Sprint Backlog é criado;
+* O plano é composto por tarefas técnicas que serão necessárias para transformar o item em um incremento do produto;
+* O Time de Desenvolvimento identifica todas as tarefas que precisam ser feitas, apenas o suficiente para prever apenas o trabalho que compreende a Sprint atual;
+* O Time de Desenvolvimento realiza a estimativa em horas para realizar o trabalho:
+* Torna visível todo o trabalho que o Time de Desenvolvimento identifica como necessario p atender o obj da Sprint
+
+Quadro de tarefas
+- Ferramentas ágeis 
+- Visualmente claro p os envolvidos no projeto
+- Divisão feitas em quatro colunas
+- Possuir ao menos as colunas de história
+
+Gráfico de Burndown
+Soma das estimativas dos esforços restantes p completar o backlog
+Informações q podem ser comunicadas
+
+Gráfico de Burndown da Sprint
+qde restante do trabalho do backlog ao longo dos dias
+visualiza esforço estimado em qualquer unidade de medida
+
+##10. User Stories e Backlog
+
+Stories
+formato conveniente p expressar o desejado valor de negócio p muitos tipos de itens do product backlog
+
+Título da User Story
+- Ator
+- Ação
+- Obj
+
+Técnica de MOSCOW
+Must Have
+Should Have
+Could Have
+Would Have
+
+Visão do Produto:
+- Descreve de maneira clara e obj a meta da fase e suas principais realizações
+- Possibilita o Product Owner informações necessárias sobre os requisitos que ele irá trabalhar
+- Visão deve ser descrita e entregue diretamente pelo cliente p o Product Owner, iniciando a fase de compreensão de valores que o cliente apresenta sobre o produto
+- Com a visão do produto, o Product Owner pode iniciar a construção do Product Backlog
+
+Técnicas p buscar requisitos do produto
+Entrevistas, dinamicas em grupo e oficinas
+Técnicas de criatividade em grupo - brainstorming?
+Técnicas de tomada de decisão em grupo
+Questionários, pesquisas, observações e propósitos
 
 
+Construindo o backlog do produto
+Evolução do Mercado
+Feedback
+Visão do Produto
+Análise de Concorrentes
+Pesquisas
+
+Backlog precisa ser: **DEEP**
+Detalhado de maneira apropriada
+Estimado
+Emergente
+Prioridade
+
+_________________________ _________________________
+|                       | |                       |
+|      N FAZER          | |          FAÇA         |
+|_______________________| |_______________________|
+_________________________ _________________________
+|                       | |                       |
+|      EVITAR FZR       | |          FAÇA         |
+|_______________________| |_______________________|
+________________________________________________> BENEFÍCIO
+
+Priorizar:
+
+Vr do ROI
+Dependências existentes
+Necessidades
+Análise dos Riscos
+Fatores Estratégicos
+Fatores Mercadológicos
+
+Técnias p priorizar
+MVP
+Google design sprint
+Lean inception
+Valor Presente Líquido
+Taxa Interna de Retorno 
+Matriz de riscos
+
+**Grooming**
+Preparação e refinamento do backlog do Produto
+Granularidade dos PBIs e a necessidade de quebra em itens menores
+Backlog n é estático
+Ideal p Time de Desenvolvimento, reserve 10% do tmp p grooming
+
+
+##11. Planejando a Sprint
+
+ E ________________________ _________________________S
+ N|                       | |                       |A
+ T|         OQ?           | |          4H           |I
+ R|_______________________| |_______________________|D
+ A_________________________ _________________________A
+ D|                       | |                       |S
+ A|        COMO?          | |          4H           |
+ S|_______________________| |_______________________|
+
+*ENTRADAS
+Capacidade do time
+backlog do produto
+tecnologia
+condições do negócio
+habilidades do time
+
+*SAÍDAS
+Itens do backlog selecionados p sprint
+Meta
+Sprint do Backlog
+
+![Planejamento da Sprint](https://compasso-my.sharepoint.com/:i:/r/personal/alexandra_paula_pb_compasso_com_br/Documents/sprint_planejamento.PNG?csf=1&web=1&e=JiaOP1)
+
+Tipos de estimativas?
+Funcionalidades desejadas
+Tamanhos
+Duração
+Cronograma
+
+Planning Poker
+Prática que usa um baralho baseado na sequência de Fibonacci, cada carta representa um valor de complexidade, auxilia na estimativa de uma história de usuário ou tarefa,é levado em conta a complexidade de cada história
+
+Velocidade
+Release = 200 pts
+Velocidade do time = 17 a 20 pts por Sprint
+
+200pts/20 pts = 10 #Sprints
+200pts/17 pts = 12 #Sprints
+
+item       tamanho    
+feature A     5
+feature B    195
+Total        200 pts
+
+##12. Realizando a Reunião Diária
+Time-box: 15min
+Diariamente
+**Problemas: Atrasos, Respostas simples, Reunião n sendo realizada diariamente e ausências de impedimentos.**
+
+##13. Definição de Pronto
+DoD
+Ao final das sprints, incremento do produto tem q estar PRONTO
+requisitos finalizados
+qualidade
+deploy
+processo transparente
+envolvidos devem saber oq significa incremento
+
+
+##14. Revisando o Incremento da Sprint
+Time-box: 4h
+
+##15. Avaliando Processos na Retrospectiva
+Time-box: 3h
+Processos, melhorias, próx sprint e como iremos melhorar?
+
+##16. Escalando Scrum
+Scrums of scrums
+Tecnica ágil
+equipes escaladas de até 9 membros
+equipes fazendo daily scrum of scrums e representantes fazendo a geral
+Equipes precisam de: product owner, PO é capaz de atender de maneira eficiente até 2 Times
+
+##17. Extra - Jira Software
+Criação de Backlogs, Sprints com a duração e obj.
+
+
+![Certificado](https://udemy-certificate.s3.amazonaws.com/image/UC-e4563e59-43d4-48f7-8b52-98568edf01ac.jpg)
