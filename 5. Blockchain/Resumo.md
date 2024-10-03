@@ -1,1 +1,0 @@
-# Resumo sobre Blockchain
