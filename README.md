@@ -25,6 +25,7 @@ Demostrar através dos commits a minha evolução na trilha.
 
 ## ⏳ Data da Entrega
 Sprint_01_pb: 27/09/2024
+
 Sprint_02_pb: 03/10/2024
 
 ## 🗂 Estrutura de Pastas
