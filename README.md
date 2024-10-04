@@ -15,7 +15,9 @@ Repositório dos materiais e resumos dos conteúdos que estudei até agora na tr
   
 - **[Segurança da Informação](https://github.com/Alepaulas/sprint_01_pb/tree/main/4.%20Seguranca-da-Informacao)**: Resumo de conceitos de segurança da informação.  
   🔒 *Seus dados seguros e protegidos!*
-
+  
+- **[Blockchain](https://github.com/Alepaulas/sprint_01_pb/tree/main/5.%20Blockchain)**: Resumo de conceitos de armazenamento.  
+  💸 *Armazenamento!*
 
 ---
 
@@ -26,7 +28,7 @@ Demostrar através dos commits a minha evolução na trilha.
 ## ⏳ Data da Entrega
 Sprint_01_pb: 27/09/2024
 
-Sprint_02_pb: 03/10/2024
+Blockchain: 03/10/2024
 
 ## 🗂 Estrutura de Pastas
 
@@ -44,3 +46,6 @@ Sprint_02_pb: 03/10/2024
 │
 └── 4. Seguranca-da-Informacao/
     └── resumo.md
+│
+└── 5. Blockchain/
+    └── Resumo.md
